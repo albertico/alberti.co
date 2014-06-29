@@ -1,0 +1,9 @@
+---
+:orm: activerecord
+:test: rspec
+:mock: rr
+:script: none
+:renderer: erb
+:stylesheet: none
+:namespace: AlbertiCo
+:migration_format: number
