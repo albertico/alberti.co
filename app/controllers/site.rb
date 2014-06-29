@@ -19,8 +19,8 @@ AlbertiCo::App.controllers :site do
   #   'Hello world!'
   # end
 
-  get :index do
-    render 'index'
+  get :index, :map => '/' do
+    render 'index', :layout => :albertico
   end
 
 end

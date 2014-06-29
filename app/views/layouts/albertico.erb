@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <%= favicon_tag 'favicon.ico' %>
+
+    <title>Albertico</title>
+
+    <!-- Bootstrap core CSS -->
+    <%= stylesheet_link_tag 'bootstrap.min' %>
+
+    <!-- Font Awesome CSS -->
+    <%= stylesheet_link_tag 'font-awesome.min' %>
+
+    <!-- Custom styles for this template -->
+    <%= stylesheet_link_tag 'albertico' %>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+
+  <body>
+    <!-- Static navbar -->
+    <div class="navbar navbar-inverse navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/">ALBERTICO</a>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="/"><i class="fa fa-home"></i> Home</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </div>
+
+    <%= yield %>
+
+    <!-- +++++ Footer Section +++++ -->
+    <div id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4>Location</h4>
+            <p>
+              Trujillo Alto, PR<br>
+              Remotely Everywhere!
+            </p>
+          </div><!-- /col-lg-4 -->
+          <div class="col-lg-4">
+            <h4>Follow me</h4>
+            <p>
+              <a href="https://twitter.com/alberti_co"><i class="fa fa-twitter-square"></i> Twitter</a><br/>
+              <a href="https://github.com/albertico"><i class="fa fa-github-alt"></i> Github</a><br/>
+              <a href="http://pr.linkedin.com/in/albertico/"><i class="fa fa-linkedin-square"></i> Linked In</a>
+            </p>
+          </div><!-- /col-lg-4 -->
+          <div class="col-lg-4">
+            <h4>Site</h4>
+            <p>
+              Site based on the <a href="http://www.blacktie.co/2014/01/stanley-freelancer-theme/">Stanley</a> <a href="http://getbootstrap.com/">Bootstrap</a> theme.
+              &nbsp;&nbsp;
+              <a href="https://www.ruby-lang.org/">Ruby</a> <a href="http://www.padrinorb.com/">powered</a>!
+            </p>
+          </div><!-- /col-lg-4 -->
+        </div><!-- /row -->
+      </div><!-- /container -->
+    </div><!-- /footer -->
+
+    <!-- JavaScript goodies
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <%= javascript_include_tag 'jquery-1.11.1.min' %>
+    <%= javascript_include_tag 'bootstrap.min' %>
+  </body>
+</html>
