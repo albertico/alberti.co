@@ -12,6 +12,7 @@ gem 'thin' # or mongrel
 
 # Project requirements
 gem 'rake'
+gem 'dotenv', :require => 'dotenv'
 
 # Component requirements
 gem 'erubis', '~> 2.7.0'
