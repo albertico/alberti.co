@@ -9,5 +9,8 @@ require File.expand_path("../config/boot.rb", __FILE__)
 # Load Dotenv!
 Dotenv.load
 
+# Use Google Analytics Rack Middleware.
+use Rack::GoogleAnalytics, :tracker => ENV['GOOGLE_ANALYTICS_TRACKER_ID']
+
 # Run Padrino!
 run Padrino.application

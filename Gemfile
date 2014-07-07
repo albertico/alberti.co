@@ -16,6 +16,7 @@ gem 'dotenv', :require => 'dotenv'
 
 # Component requirements
 gem 'erubis', '~> 2.7.0'
+gem 'rack-google-analytics', :require => 'rack/google-analytics'
 gem 'activerecord', '>= 3.1', :require => 'active_record'
 gem 'sqlite3'
 
