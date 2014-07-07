@@ -6,4 +6,8 @@
 
 require File.expand_path("../config/boot.rb", __FILE__)
 
+# Load Dotenv!
+Dotenv.load
+
+# Run Padrino!
 run Padrino.application
